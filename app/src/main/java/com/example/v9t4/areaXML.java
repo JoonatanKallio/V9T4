@@ -97,7 +97,7 @@ public class areaXML {
                     String movieStartTime = list1[1];
                     Date movieStart = formatter.parse(movieStartTime);
                     if (movieStart.after(timeStart) && movieStart.before(timeEnd) || movieStart.equals(timeStart) || movieStart.equals(timeEnd)) {
-                        stringBuilder.append(element.getElementsByTagName("Title").item(0).getTextContent() + "\nKesto : " + element.getElementsByTagName("LengthInMinutes").item(0).getTextContent() + "min" + "\nEsityksen aloitus klo: " + list1[1] + "\n\n");
+                        stringBuilder.append(element.getElementsByTagName("Title").item(0).getTextContent() + "\nSali: " + element.getElementsByTagName("TheatreAuditorium").item(0).getTextContent() + "\nKesto : " + element.getElementsByTagName("LengthInMinutes").item(0).getTextContent() + "min" + "\nEsityksen aloitus klo: " + list1[1] + "\n\n");
 
                     }
                 }
